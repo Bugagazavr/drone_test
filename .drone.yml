@@ -4,7 +4,7 @@ env:
 services:
   - postgres
 script:
-  - echo 'ggg'
+  - echo 'ggggg'
   - sudo mkdir -p /var/run/postgres
   - ls -la /etc/init
   - psql -p 5432 -h localhost -U postgres -c 'create database test;'
