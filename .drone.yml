@@ -4,6 +4,7 @@ env:
 services:
   - postgres
 script:
+  - echo 'gg'
   - sudo mkdir -p /var/run/postgres
   - sudo chown -R postgres:postgres /var/run/postgres
   - sudo pg_ctl reload
