@@ -6,5 +6,5 @@ services:
 script:
   - echo 'gg'
   - sudo mkdir -p /var/run/postgres
-  - sudo pg_ctl reload
+  - ls -la /etc/init.d
   - psql -p 5432 -h localhost -U postgres -c 'create database test;'
