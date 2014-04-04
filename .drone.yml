@@ -4,5 +4,5 @@ env:
 services:
   - postgres
 script:
-  - ls -la /tmp
+  - netstat -l
   - psql -p 5432 -h localhost -U postgres -c 'create database test;'
