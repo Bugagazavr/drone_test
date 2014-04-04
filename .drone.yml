@@ -1,0 +1,7 @@
+image: bradrydzewski/ruby:2.1.0
+env:
+  - RAILS_ENV=test
+services:
+  - postgres
+script:
+  - psql -c 'create database test;' -U postgres
