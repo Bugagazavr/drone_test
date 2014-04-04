@@ -6,5 +6,5 @@ services:
 script:
   - echo 'ggggg'
   - sudo mkdir -p /var/run/postgres
-  - ps -A
+  - sudo ps -A
   - psql -p 5432 -h localhost -U postgres -c 'create database test;'
