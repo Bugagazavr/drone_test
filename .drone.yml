@@ -4,5 +4,7 @@ env:
 services:
   - postgres
 script:
-  - netstat -l
+  - mkdir -p /var/run/postgres
+  - chown -R postgres:postgres /var/run/postgres
+  - sudo pg_ctl reload
   - psql -p 5432 -h localhost -U postgres -c 'create database test;'
