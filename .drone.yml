@@ -5,5 +5,4 @@ services:
   - postgres
 script:
   - ls -la /var/run/
-  - psql -p 5432 -h localhost -U postgres
-  - psql -c 'create database test;' -U postgres
+  - psql -p 5432 -h localhost -U postgres -c 'create database test;'
