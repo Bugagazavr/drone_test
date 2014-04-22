@@ -1,10 +1,8 @@
-image: bradrydzewski/ruby:2.1.0
+image: bradrydzewski/jruby:1.7.11-openjdk6
 env:
   - RAILS_ENV=test
 services:
   - postgres
 script:
-  - echo 'ggggg'
-  - sudo mkdir -p /var/run/postgres
-  - sudo ps -A
-  - psql -p 5432 -h localhost -U postgres -c 'create database test;'
+  - ruby -v
+  - java --version
