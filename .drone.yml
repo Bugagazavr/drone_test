@@ -1,9 +1,7 @@
-image: bradrydzewski/jruby:1.7.11-openjdk6
+image: bradrydzewski/ruby:2.1.2
 env:
   - RAILS_ENV=test
 services:
   - postgres
 script:
   - ruby -v
-  - jruby -v
-  - java --version
