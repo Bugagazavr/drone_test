@@ -5,5 +5,3 @@ services:
   - postgres
 script:
   - ruby -v
-  
-  
