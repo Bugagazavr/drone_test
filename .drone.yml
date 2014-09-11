@@ -1,6 +1,7 @@
 image: bradrydzewski/ruby:2.1.2
 env:
   - RAILS_ENV=test
+  - uname -a
 services:
   - postgres
 script:
