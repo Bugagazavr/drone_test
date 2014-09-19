@@ -1,4 +1,4 @@
-image: bradrydzewski/ruby:2.1.2
+image: ruby
 env:
   - RAILS_ENV=test
 services:
@@ -6,3 +6,5 @@ services:
 script:
   - ruby -v
   - uname -a
+  
+  
