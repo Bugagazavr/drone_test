@@ -1,4 +1,4 @@
-image: bradrydzewski/ruby
+image: ruby
 env:
   - RAILS_ENV=test
 services:
